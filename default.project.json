@@ -6,6 +6,16 @@
     "ReplicatedStorage": {
       "Shared": {
         "$path": "src/shared"
+      },
+      "PlatformTemplate": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": false,
+          "Massless": true,
+          "Size": [8, 1, 8],
+          "Color": [0.8, 0.8, 0.8],
+          "CanCollide": true
+        }
       }
     },
 
