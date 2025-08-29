@@ -2,80 +2,32 @@
   "name": "platformer-roblox-project",
   "tree": {
     "$className": "DataModel",
+    "$ignoreUnknownInstances": true,
+
+    "Workspace": {
+      "$className": "Workspace",
+      "$path": "src/Workspace"
+    },
 
     "ReplicatedStorage": {
-      "Shared": {
-        "$path": "src/shared"
-      },
-      "PlatformTemplate": {
-        "$className": "Part",
-        "$properties": {
-          "Anchored": false,
-          "Massless": true,
-          "Size": [8, 1, 8],
-          "Color": [0.8, 0.8, 0.8],
-          "CanCollide": true
-        }
-      }
+      "$className": "ReplicatedStorage",
+      "$path": "src/ReplicatedStorage"
     },
 
     "ServerScriptService": {
-      "Server": {
-        "$path": "src/server"
-      }
+      "$className": "ServerScriptService",
+      "$path": "src/ServerScriptService"
     },
 
     "StarterPlayer": {
-      "StarterPlayerScripts": {
-        "Client": {
-          "$path": "src/client"
-        }
-      }
-    },
-
-    "Workspace": {
-      "$properties": {
-        "FilteringEnabled": true
+      "$className": "StarterPlayer",
+      "StarterCharacterScripts": {
+        "$className": "StarterCharacterScripts",
+        "$path": "src/StarterCharacterScripts"
       },
-      "Baseplate": {
-        "$className": "Part",
-        "$properties": {
-          "Anchored": true,
-          "Color": [
-            0.38823,
-            0.37254,
-            0.38823
-          ],
-          "Locked": true,
-          "Position": [
-            0,
-            -10,
-            0
-          ],
-          "Size": [
-            512,
-            20,
-            512
-          ]
-        }
-      }
-    },
-    "Lighting": {
-      "$properties": {
-        "Ambient": [
-          0,
-          0,
-          0
-        ],
-        "Brightness": 2,
-        "GlobalShadows": true,
-        "Outlines": false,
-        "Technology": "Voxel"
-      }
-    },
-    "SoundService": {
-      "$properties": {
-        "RespectFilteringEnabled": true
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "$path": "src/StarterPlayerScripts"
       }
     }
   }
